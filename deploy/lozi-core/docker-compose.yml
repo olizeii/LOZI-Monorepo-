@@ -1,0 +1,10 @@
+# Läuft im Docker-LXC auf Proxmox. Start: `docker compose up -d --build` in diesem Ordner.
+# Vorher: cp .env.example .env und die Werte anpassen.
+services:
+  lozi-core:
+    build: ../../core
+    container_name: lozi-core
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8765:8765"
