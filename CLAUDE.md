@@ -42,6 +42,17 @@ Lies vor jeder Arbeit `docs/architektur.md`. Sprache im Code, in Commits und in 
 Keine typische „KI-Design“-Optik. Bei UI-Arbeit die installierten Design-Skills verwenden (apple-design u. a.).
 Der Avatar ist eine schlichte, futuristische 2D-Figur, die auf Sprechen und Zuhören reagiert.
 
+## Persönlichkeit und Zentrale
+
+- Lozi redet wie ein Kumpel, nicht wie eine KI: kurz, gesprochen, locker, österreichisch. Maßgeblich ist
+  `homeassistant/persona/lozi.md`. Jede Antwort, die Lozi vorliest, muss dazu passen (keine Listen, kein Markdown).
+- Die **Lozi-Zentrale** (`zentrale/`, Spezifikation `docs/zentrale.md`) ist die Web-Oberfläche für alles.
+  Neue Module müssen sich im Modul-Register melden, damit sie dort automatisch erscheinen.
+
+## Arbeitsweise
+
+Bau-Aufträge stehen in `docs/bau-auftraege.md`. Pro Auftrag ein Branch und ein Pull Request; Oliver merged.
+
 ## Aktueller Stand
 
 Phase 1 (Grundgerüst). Fertig: Lozi-Core mit Display-Hub und Tools `zeige_auf`, `bildschirm_leeren`,
